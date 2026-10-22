@@ -163,11 +163,18 @@ a { color: inherit; text-decoration: none; }
 .hero-sub { margin-top: 10px; font: italic 500 1.35rem var(--serif); color: var(--silver); }
 .hero h1 { margin: 2px 0 6px; line-height: 1; font-weight: 400; }
 .hero h1 .script {
-  display: block; font-size: clamp(3.4rem, 15vw, 6.6rem); line-height: 1.05;
+  display: block;
+  font-size: clamp(3.4rem, 15vw, 6.6rem);
+  line-height: 1.05;
   background: linear-gradient(180deg, #FFFFFF 10%, #A8C6F5 90%);
-  -webkit-background-clip: text; background-clip: text; color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   filter: drop-shadow(0 4px 18px rgba(80,130,230,.45));
-  padding: 0 .1em .08em;
+
+  /* give the swashes room so the gradient doesn't cut them off */
+  padding: .12em .32em .26em;
+  margin: -.12em -.32em -.2em;
 }
 .hero h1 .surname { display: block; font: 600 clamp(1.2rem, 5vw, 2.2rem) var(--serif); letter-spacing: .3em; text-indent: .3em; text-transform: uppercase; color: var(--gold-lt); }
 .hero-tag { margin-top: 12px; font: italic 400 1.2rem var(--serif); color: var(--silver); }
